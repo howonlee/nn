@@ -22,6 +22,9 @@
 #include "generic/ELU.c"
 #include "THGenerateFloatTypes.h"
 
+#include "generic/HarmLU.c"
+#include "THGenerateFloatTypes.h"
+
 #include "generic/HardShrink.c"
 #include "THGenerateFloatTypes.h"
 
