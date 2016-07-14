@@ -89,6 +89,7 @@ require('nn.LeakyReLU')
 require('nn.SpatialSoftMax')
 require('nn.RReLU')
 require('nn.ELU')
+require('nn.HarmLU')
 
 require('nn.LookupTable')
 require('nn.SpatialConvolution')
