@@ -10,6 +10,9 @@
 #include "generic/LNL.c"
 #include "THGenerateFloatTypes.h"
 
+#include "generic/xor.c"
+#include "THGenerateFloatTypes.h"
+
 #include "generic/AbsCriterion.c"
 #include "THGenerateFloatTypes.h"
 

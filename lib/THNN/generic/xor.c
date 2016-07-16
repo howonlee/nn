@@ -1,8 +1,8 @@
 #ifndef TH_GENERIC_FILE
-#define TH_GENERIC_FILE "generic/LNL.c"
+#define TH_GENERIC_FILE "generic/xor.c"
 #else
 
-void THNN_(LNL_updateOutput)(
+void THNN_(xor_updateOutput)(
           THNNState *state,
           THTensor *input,
           THTensor *output,
@@ -15,7 +15,7 @@ void THNN_(LNL_updateOutput)(
   );
 }
 
-void THNN_(LNL_updateGradInput)(
+void THNN_(xor_updateGradInput)(
           THNNState *state,
           THTensor *input,
           THTensor *gradOutput,

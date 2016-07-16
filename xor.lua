@@ -1,12 +1,12 @@
-local LNL, parent = torch.class('nn.LNL', 'nn.Module')
+local xor, parent = torch.class('nn.xor', 'nn.Module')
 
-function LNL:__init(alpha)
+function xor:__init(alpha)
    parent.__init(self)
    self.alpha = alpha or 1
 end
 
-function LNL:updateOutput(input)
-   input.THNN.LNL_updateOutput(
+function xor:updateOutput(input)
+   input.THNN.xor_updateOutput(
       input:cdata(),
       self.output:cdata(),
       self.alpha
@@ -14,8 +14,8 @@ function LNL:updateOutput(input)
    return self.output
 end
 
-function LNL:updateGradInput(input, gradOutput)
-   input.THNN.LNL_updateGradInput(
+function xor:updateGradInput(input, gradOutput)
+   input.THNN.xor_updateGradInput(
       input:cdata(),
       gradOutput:cdata(),
       self.gradInput:cdata(),
