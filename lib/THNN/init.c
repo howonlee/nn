@@ -7,6 +7,9 @@
 #include "generic/Abs.c"
 #include "THGenerateFloatTypes.h"
 
+#include "generic/LNL.c"
+#include "THGenerateFloatTypes.h"
+
 #include "generic/AbsCriterion.c"
 #include "THGenerateFloatTypes.h"
 
