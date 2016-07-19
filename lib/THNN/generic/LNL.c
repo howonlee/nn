@@ -11,7 +11,7 @@ void THNN_(LNL_updateOutput)(
   THTensor_(resizeAs)(output, input);
   THTensor_(abs)(output, input);
   TH_TENSOR_APPLY2(real, input, real, output,
-    *output_data = *input_data <= 0 ? *input_data + alpha : *input_data - alpha;
+    *output_data = rand() % 10 <= 5 ? *input_data + alpha : *input_data - alpha;
   );
 }
 
