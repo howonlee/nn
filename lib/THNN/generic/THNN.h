@@ -24,6 +24,18 @@ TH_API void THNN_(LNL_updateGradInput)(
           THTensor *gradInput,
           real alpha);        // [OUT] gradient w.r.t. input
 
+TH_API void THNN_(Rack_updateOutput)(
+          THNNState *state,            // library's state
+          THTensor *input,             // input tensor
+          THTensor *output,
+          real alpha);           // [OUT] Abs output
+TH_API void THNN_(Rack_updateGradInput)(
+          THNNState *state,            // library's state
+          THTensor *input,             // input tensor
+          THTensor *gradOutput,        // gradient w.r.t. output
+          THTensor *gradInput,
+          real alpha);        // [OUT] gradient w.r.t. input
+
 TH_API void THNN_(xor_updateOutput)(
           THNNState *state,            // library's state
           THTensor *input,             // input tensor
